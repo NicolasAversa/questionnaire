@@ -142,8 +142,6 @@ A closure is generated when we instantiate a function that returns a function, a
 
 Every time we create a function, we are creating an execution context with a local lexical environment. It is within that lexical environment where all the variables and their corresponding values are stored. Thus, if we create a function inside another function, what we are creating are 2 different lexical environments.
 
-We can take advantage of this behavior since it opens the possibility to create a function that holds a “private local state”; which is no more than the variables created in an upper scope and binded using a reference to memory pointing to the upper lexical environment.
-
 We can take advantage of this behavior, as it opens the possibility of creating a function that keeps a "private local state"; which is nothing more than the variables created in a higher scope and linked by a memory reference pointing to the upper scope lexical environment.
 
 ```jsx
