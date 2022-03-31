@@ -17,8 +17,6 @@
 
 Both are equality comparison operators, but the `==` makes a comparison regardless of the type of the value. For example, if you want to compare a string `"10"` and a number `10` the result is going to be `true` because after the comparison the operator does an automatic `type coercion` to transform both values to the same type. There are many rules and conditions that JavaScript takes into account to do that type transformation, but instead of learning all of them, it is simpler to use the `===` operator (the strict equality operator).
 
-The strict equality operator compares two values taking into consideration theirs types as well in such way that if we wanted to compare `“10” === 10` we will have a `false` instead of a true in contraposition to the other operator.
-
 The strict equality operator compares two values also taking into consideration their types, so that if we wanted to compare `"10" === 10` we would have a log of `false` value instead of a `true` because the types don’t match.
 
 ```jsx
